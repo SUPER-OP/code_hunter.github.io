@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.blogItem h3 {
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.blogItem p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+    width:45vw;
+    
+}
+
+.blogItemb{
+    cursor:pointer;
+    color: rgb(0, 132, 255);
+}
+@media (max-width: 700px){
+    .main{
+        padding: 1rem;
+    }
+    .blogItem p{
+        font-size: 1rem;
+        width: 90vw;
+    }
+    
+}

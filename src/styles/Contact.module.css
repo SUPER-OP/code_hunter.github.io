@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.container {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color: #fff
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+margin-bottom: 2rem;
+    font-family: 'Ubuntu Mono', monospace;
+    text-transform: uppercase;
+}
+
+.container h1 span {
+    font-size: 3.5rem;
+    color: #B721FF;
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.submitBtn button {
+    height: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+    padding-right: 20px;
+    overflow: hidden;
+    border-radius: 20%;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-right: 10px;
+
+    margin-bottom: 20px;
+    border-color: #12192c;
+    background: #B721FF;
+    color: white;
+
+}
+
+.submitBtn button:hover {
+    background: #12192c;
+    color: white;
+    border-color: white;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.submitBtn button:active {
+    background-color: #B721FF;
+    color: black;
+}
+
+.formWrapper {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box {
+    margin-bottom: 1.5rem;
+}
+
+.formLabel {
+    margin: 2rem 0.5rem;
+    color: #B721FF;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.form_control {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    background-color: black;
+    border-color: white;
+    border-radius: 0.4rem;
+
+
+}
+
+.form_control:focus,
+.form_controlDesc:focus {
+    box-shadow: 0 0 0.3rem rgb(169, 0, 248);
+    border: .3rem solid rgb(169, 0, 248);
+    border-style: double;
+}
+
+.form_controlDesc {
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    background-color: rgb(0, 0, 0);
+    border-color: white;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 0.4rem;
+    padding: .5rem;
+}
+
+
+@media (max-width:700px) {
+    
+    .container h1{
+        font-size: 2rem;
+    }
+    .container h1 span{
+        font-size: 2.5rem;
+    }
+    .form_control{
+        width: 15rem;
+        font-size: 1rem;
+    }
+    .formLabel{
+        font-size: 1.2rem;
+    }
+    .form_controlDesc{
+        font-size: 1rem;
+        width: 95vw;
+    }
+}
