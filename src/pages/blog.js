@@ -51,8 +51,8 @@ export const Blog = (props) => {
         <div className={styles.blogItem}>
           {/* {blogs.map((blogItem) => {
             return <div key={blogItem.slug}>
-              <Link href={`blogpost/${blogItem.slug}`}><h3>{blogItem.title}</h3></Link>
-              <p className={styles.blogItemP}>{blogItem.metadesc.substr(0, 150)}...<b className={styles.blogItemb}>Read More</b></p>
+              <Link href={`blogpost/${blogItem.slug}`}><h3>{blogItem.title}</h3
+              <p className={styles.blogItemP}>{blogItem.metadesc.substr(0, 150)}...<b className={styles.blogItemb}>Read More</b></p>></Link>
             </div>
           })} */}
           <div className={styles.blogs}>
