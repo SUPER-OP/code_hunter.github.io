@@ -28,7 +28,7 @@ export const Blog = (props) => {
           dataLength={blogs.length} //This is important field to render the next data
           next={fetchData}
           hasMore={props.allCount !== blogs.length}
-          loader={<p>.....................</p>}
+          loader={<p styles={{fontFamily:'monospace'}}>Loading...</p>}
           endMessage={
             <p style={{ textAlign: 'center' }}>
               <b>Yay! You have seen it all</b>
@@ -39,8 +39,8 @@ export const Blog = (props) => {
           <div className={styles.blogItem}>
             {blogs.map((blogItem) => {
               return <div key={blogItem.slug}>
-                <Link href={`blogpost/${blogItem.slug}`}><h3>{blogItem.title}</h3></Link>
-                <p className={styles.blogItemP}>{blogItem.metadesc.substr(0, 150)}...<b className={styles.blogItemb}>Read More</b></p>
+                <Link href={`blogpost/${blogItem.slug}`}><h3>{blogItem.title}</h3>
+                <p className={styles.blogItemP}>{blogItem.metadesc.substr(0, 150)}...<b className={styles.blogItemb}>Read More</b></p></Link>
               </div>
             })}
           </div>
