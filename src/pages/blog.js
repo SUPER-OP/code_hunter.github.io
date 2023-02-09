@@ -11,7 +11,7 @@ export const Blog = (props) => {
   const [count, setCount] = useState(2)
 
   const fetchData = async () => {
-    let d = await fetch(`https://remarkable-tapioca-396922.netlify.app/api/blogs/?count=${count + 2}`)
+    let d = await fetch(`https://remarkable-tapioca-396922.netlify.app/api/blogs/?count=${count + 4}`)
     setCount(count + 2);
     let data = await d.json()
     setBlogs(data)
